@@ -1,7 +1,6 @@
 {{#each beer}}
   <h1>{{this.name}}</h1>
-  {{this.img}}
+  <img src='{{this.image_url}}' alt='{{this.tagline}}' />
+  <h5>{{this.tagline}}</h5>
   {{this.description}}
-  {{this.tagline}}
 {{/each}}
-{{log beer}}
